@@ -1,17 +1,21 @@
 (function($){
 
-    $.fn.extend({
+  $.fn.extend({
 
-        addTemporaryClass: function(className, duration) {
-            var elements = this;
-            setTimeout(function() {
-                elements.removeClass(className);
-            }, duration*1000);
+    addTemporaryClass: function(className, duration) {
 
-            return this.each(function() {
-                $(this).addClass(className);
-            });
-        }
-    });
+      duration = (typeof duration !== "undefined") ? duration : 1;
+
+      var elements = this;
+      setTimeout(function() {
+          elements.removeClass(className);
+      }, duration*1000);
+
+      return this.each(function() {
+          $(this).addClass(className);
+      });
+    }
+
+  });
 
 })(jQuery);
