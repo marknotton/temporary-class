@@ -6,3 +6,8 @@ Adds a class for 2 seconds, then removes it.
 ```
 $("#myElement").addTemporaryClass("myClass", 2);
 ```
+
+After 3 seconds, add a class for 2 seconds, then remove it.
+```
+$("#myElement").addTemporaryClass("myClass", 2, 3);
+```

@@ -2,18 +2,32 @@
 
   $.fn.extend({
 
-    addTemporaryClass: function(className, duration) {
+    addTemporaryClass: function(className, duration, delay) {
 
       duration = (typeof duration !== "undefined") ? duration : 1;
 
-      var elements = this;
-      setTimeout(function() {
-          elements.removeClass(className);
-      }, duration*1000);
+      delay = (typeof delay !== "undefined") ? delay : null;
 
-      return this.each(function() {
-          $(this).addClass(className);
-      });
+      var elements = this;
+
+      if ( typeof delay == "number" ) {
+        setTimeout(function() {
+
+          $(elements).addClass(className);
+
+          setTimeout(function() {
+            elements.removeClass(className);
+          }, duration*1000);
+
+        }, delay*1000);
+      } else {
+
+        $(elements).addClass(className);
+
+        setTimeout(function() {
+          elements.removeClass(className);
+        }, duration*1000);
+      }
     }
 
   });
