@@ -2,7 +2,7 @@
 
 Add a class to an element for a specified amount of time.
 
-> *Credit* This plugin is an expansion from [this forum post](http://stackoverflow.com/a/5067113/843131) by [Dan S](http://stackoverflow.com/users/625248/dan-s)
+> **Credit:** This plugin is an expansion from [this forum post](http://stackoverflow.com/a/5067113/843131) by [Dan S](http://stackoverflow.com/users/625248/dan-s)
 
 ### Parameters
 
