@@ -1,0 +1,9 @@
+{
+  "name": "temporary-class",
+  "version": "1.0.1",
+  "description": "Add a class to an element for a specified amount of time.",
+  "main": "temporary-class.js",
+  "repository": "https://github.com/marknotton/temporary-class",
+  "author": "Mark Notton",
+  "license": "MIT"
+}
